@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PostCollectionViewCell" customModule="DoIOSMore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="332"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="332"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDP-vk-WRS">
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="332"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im_man" translatesAutoresizingMaskIntoConstraints="NO" id="pMP-aH-hPB">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="254"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28J-rX-D5V">
+                                <rect key="frame" x="0.0" y="254" width="315" height="78"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Coding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0P-aE-cwP">
+                                        <rect key="frame" x="0.0" y="27" width="315" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstItem="t0P-aE-cwP" firstAttribute="centerY" secondItem="28J-rX-D5V" secondAttribute="centerY" id="65E-iY-oHr"/>
+                                    <constraint firstItem="t0P-aE-cwP" firstAttribute="leading" secondItem="28J-rX-D5V" secondAttribute="leading" id="Ksd-Gb-I6w"/>
+                                    <constraint firstAttribute="trailing" secondItem="t0P-aE-cwP" secondAttribute="trailing" id="kuc-S0-nQY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="28J-rX-D5V" firstAttribute="top" secondItem="pMP-aH-hPB" secondAttribute="bottom" id="4T5-91-waF"/>
+                            <constraint firstAttribute="bottom" secondItem="28J-rX-D5V" secondAttribute="bottom" id="6UR-PN-g7R"/>
+                            <constraint firstItem="28J-rX-D5V" firstAttribute="leading" secondItem="oDP-vk-WRS" secondAttribute="leading" id="XDW-Cx-u3y"/>
+                            <constraint firstItem="pMP-aH-hPB" firstAttribute="top" secondItem="oDP-vk-WRS" secondAttribute="top" id="XUf-wx-L7K"/>
+                            <constraint firstAttribute="trailing" secondItem="28J-rX-D5V" secondAttribute="trailing" id="efO-l6-SzJ"/>
+                            <constraint firstItem="pMP-aH-hPB" firstAttribute="leading" secondItem="oDP-vk-WRS" secondAttribute="leading" id="f5h-5t-epk"/>
+                            <constraint firstAttribute="bottom" secondItem="pMP-aH-hPB" secondAttribute="bottom" constant="78" id="nSP-f8-UhZ"/>
+                            <constraint firstAttribute="trailing" secondItem="pMP-aH-hPB" secondAttribute="trailing" id="th1-AX-Urg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oDP-vk-WRS" secondAttribute="trailing" id="d3c-W1-oBM"/>
+                <constraint firstItem="oDP-vk-WRS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fCO-rH-9FD"/>
+                <constraint firstAttribute="bottom" secondItem="oDP-vk-WRS" secondAttribute="bottom" id="h2u-DW-jpZ"/>
+                <constraint firstItem="oDP-vk-WRS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uVc-0e-JrN"/>
+            </constraints>
+            <size key="customSize" width="315" height="332"/>
+            <connections>
+                <outlet property="col_image" destination="pMP-aH-hPB" id="p5S-nz-aY7"/>
+                <outlet property="col_title" destination="t0P-aE-cwP" id="Oq7-SB-OMl"/>
+                <outlet property="post_image" destination="pMP-aH-hPB" id="xAl-8A-qKV"/>
+            </connections>
+            <point key="canvasLocation" x="329.71014492753625" y="200.89285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="im_man" width="3648" height="5472"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
