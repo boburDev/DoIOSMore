@@ -9,8 +9,9 @@ import UIKit
 
 class PostCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet var col_image: UIImageView!
-    @IBOutlet var col_title: UILabel!
+    @IBOutlet var image: UIImageView!
+    @IBOutlet var title: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

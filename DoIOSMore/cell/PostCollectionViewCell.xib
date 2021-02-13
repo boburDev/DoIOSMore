@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDP-vk-WRS">
                         <rect key="frame" x="0.0" y="0.0" width="315" height="332"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im_man" translatesAutoresizingMaskIntoConstraints="NO" id="pMP-aH-hPB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pMP-aH-hPB">
                                 <rect key="frame" x="0.0" y="0.0" width="315" height="254"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28J-rX-D5V">
@@ -72,7 +72,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="im_man" width="3648" height="5472"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

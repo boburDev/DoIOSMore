@@ -7,10 +7,9 @@
 
 import UIKit
 
-class CollectionSViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class CollectionHViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
     
-    
-    @IBOutlet var collectionView: UICollectionView!
     
     let numberOfColumn:CGFloat = 2
     var items:Array<Collection> = Array()
@@ -35,7 +34,8 @@ class CollectionSViewController: UIViewController, UICollectionViewDataSource, U
             let cellWidth = screenSize.width / numberOfColumn - 15
             floatLaout.itemSize = CGSize(width: cellWidth, height: cellWidth)
         }
-        
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
     }
     
     func settingNavigation() {
@@ -60,8 +60,11 @@ class CollectionSViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        let item = items[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! PostCollectionViewCell
+        
+        cell.image.image = UIImage(named: item.img)
+        cell.title.text = item.title
         
         return cell
     }

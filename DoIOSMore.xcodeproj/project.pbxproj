@@ -18,8 +18,8 @@
 		95C33ED825D7E00400A4AC72 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33ED725D7E00400A4AC72 /* Item.swift */; };
 		95C33EE125D7E4B100A4AC72 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33EDF25D7E4B100A4AC72 /* PostCollectionViewCell.swift */; };
 		95C33EE225D7E4B100A4AC72 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C33EE025D7E4B100A4AC72 /* PostCollectionViewCell.xib */; };
-		95C33EED25D7E88200A4AC72 /* CollectionSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33EEB25D7E88200A4AC72 /* CollectionSViewController.swift */; };
-		95C33EEE25D7E88200A4AC72 /* CollectionSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C33EEC25D7E88200A4AC72 /* CollectionSViewController.xib */; };
+		95C33EF425D7F0C800A4AC72 /* CollactionHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33EF225D7F0C800A4AC72 /* CollactionHViewController.swift */; };
+		95C33EF525D7F0C800A4AC72 /* CollactionHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C33EF325D7F0C800A4AC72 /* CollactionHViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		95C33ED725D7E00400A4AC72 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		95C33EDF25D7E4B100A4AC72 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		95C33EE025D7E4B100A4AC72 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
-		95C33EEB25D7E88200A4AC72 /* CollectionSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSViewController.swift; sourceTree = "<group>"; };
-		95C33EEC25D7E88200A4AC72 /* CollectionSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionSViewController.xib; sourceTree = "<group>"; };
+		95C33EF225D7F0C800A4AC72 /* CollactionHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollactionHViewController.swift; sourceTree = "<group>"; };
+		95C33EF325D7F0C800A4AC72 /* CollactionHViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollactionHViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 			children = (
 				95C33ED125D7DDA300A4AC72 /* ScrollViewController.swift */,
 				95C33ED225D7DDA300A4AC72 /* ScrollViewController.xib */,
-				95C33EEB25D7E88200A4AC72 /* CollectionSViewController.swift */,
-				95C33EEC25D7E88200A4AC72 /* CollectionSViewController.xib */,
+				95C33EF225D7F0C800A4AC72 /* CollactionHViewController.swift */,
+				95C33EF325D7F0C800A4AC72 /* CollactionHViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -177,11 +177,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C33EF525D7F0C800A4AC72 /* CollactionHViewController.xib in Resources */,
 				95C33EBA25D7CE3C00A4AC72 /* LaunchScreen.storyboard in Resources */,
 				95C33EE225D7E4B100A4AC72 /* PostCollectionViewCell.xib in Resources */,
 				95C33EB725D7CE3C00A4AC72 /* Assets.xcassets in Resources */,
 				95C33EB225D7CE3B00A4AC72 /* Main.storyboard in Resources */,
-				95C33EEE25D7E88200A4AC72 /* CollectionSViewController.xib in Resources */,
 				95C33ED425D7DDA300A4AC72 /* ScrollViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C33EED25D7E88200A4AC72 /* CollectionSViewController.swift in Sources */,
+				95C33EF425D7F0C800A4AC72 /* CollactionHViewController.swift in Sources */,
 				95C33ED325D7DDA300A4AC72 /* ScrollViewController.swift in Sources */,
 				95C33ED825D7E00400A4AC72 /* Item.swift in Sources */,
 				95C33EAB25D7CE3B00A4AC72 /* AppDelegate.swift in Sources */,

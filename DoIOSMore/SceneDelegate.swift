@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func callCollectionView() {
         
-        let vc:CollectionSViewController = CollectionSViewController(nibName: "CollectionSViewController", bundle: nil)
+        let vc:CollectionHViewController = CollectionHViewController(nibName: "CollectionHViewController", bundle: nil)
         let nc = UINavigationController(rootViewController: vc)
         
         if self.window == nil {
