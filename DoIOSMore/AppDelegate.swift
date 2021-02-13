@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setNavigationBar() {
-        UINavigationBar.appearance().tintColor = UIColor.black
-        UINavigationBar.appearance().barTintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barTintColor = UIColor.darkGray
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
     }
 
     // MARK: UISceneSession Lifecycle

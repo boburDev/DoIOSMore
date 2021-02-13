@@ -37,6 +37,20 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         }
         items.append(Collection(title: "Best Coding", img: "im_man"))
         items.append(Collection(title: "Amazing Code", img: "im_woman"))
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
     }
     
     func settingNavigation() {
@@ -64,6 +78,8 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         let item = items[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! PostSCollectionViewCell
         
+        cell.postImage.image = UIImage(named: item.img)
+        cell.postTitile.text = item.title
         
         return cell
     }
