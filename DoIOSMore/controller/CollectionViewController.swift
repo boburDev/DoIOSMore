@@ -8,6 +8,7 @@
 import UIKit
 
 class CollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -27,16 +28,15 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        self.collectionView.register(UINib(nibName: "PostCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "myCell")
+        self.collectionView.register(UINib(nibName: "PostSCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "myCell")
         
         if let floatLaout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             let screenSize: CGRect = UIScreen.main.bounds
             let cellWidth = screenSize.width / numberOfColumn - 15
             floatLaout.itemSize = CGSize(width: cellWidth, height: cellWidth)
         }
-        
-        items.append(Collection(name: "Name"))
-        
+        items.append(Collection(title: "Best Coding", img: "im_man"))
+        items.append(Collection(title: "Amazing Code", img: "im_woman"))
     }
     
     func settingNavigation() {
@@ -61,8 +61,9 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let item = items[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! PostSCollectionViewCell
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! PostCollectionViewCell
         
         return cell
     }

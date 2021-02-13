@@ -16,10 +16,10 @@
 		95C33ED325D7DDA300A4AC72 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33ED125D7DDA300A4AC72 /* ScrollViewController.swift */; };
 		95C33ED425D7DDA300A4AC72 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C33ED225D7DDA300A4AC72 /* ScrollViewController.xib */; };
 		95C33ED825D7E00400A4AC72 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33ED725D7E00400A4AC72 /* Item.swift */; };
-		95C33EE125D7E4B100A4AC72 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33EDF25D7E4B100A4AC72 /* PostCollectionViewCell.swift */; };
-		95C33EE225D7E4B100A4AC72 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C33EE025D7E4B100A4AC72 /* PostCollectionViewCell.xib */; };
-		95C33EF425D7F0C800A4AC72 /* CollactionHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33EF225D7F0C800A4AC72 /* CollactionHViewController.swift */; };
-		95C33EF525D7F0C800A4AC72 /* CollactionHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C33EF325D7F0C800A4AC72 /* CollactionHViewController.xib */; };
+		95C33EFB25D7F23700A4AC72 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33EF925D7F23700A4AC72 /* CollectionViewController.swift */; };
+		95C33EFC25D7F23700A4AC72 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C33EFA25D7F23700A4AC72 /* CollectionViewController.xib */; };
+		95C33F0225D7F30700A4AC72 /* PostSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C33F0025D7F30700A4AC72 /* PostSCollectionViewCell.swift */; };
+		95C33F0325D7F30700A4AC72 /* PostSCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C33F0125D7F30700A4AC72 /* PostSCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		95C33ED125D7DDA300A4AC72 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		95C33ED225D7DDA300A4AC72 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 		95C33ED725D7E00400A4AC72 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		95C33EDF25D7E4B100A4AC72 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
-		95C33EE025D7E4B100A4AC72 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
-		95C33EF225D7F0C800A4AC72 /* CollactionHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollactionHViewController.swift; sourceTree = "<group>"; };
-		95C33EF325D7F0C800A4AC72 /* CollactionHViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollactionHViewController.xib; sourceTree = "<group>"; };
+		95C33EF925D7F23700A4AC72 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		95C33EFA25D7F23700A4AC72 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		95C33F0025D7F30700A4AC72 /* PostSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSCollectionViewCell.swift; sourceTree = "<group>"; };
+		95C33F0125D7F30700A4AC72 /* PostSCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostSCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 			children = (
 				95C33ED125D7DDA300A4AC72 /* ScrollViewController.swift */,
 				95C33ED225D7DDA300A4AC72 /* ScrollViewController.xib */,
-				95C33EF225D7F0C800A4AC72 /* CollactionHViewController.swift */,
-				95C33EF325D7F0C800A4AC72 /* CollactionHViewController.xib */,
+				95C33EF925D7F23700A4AC72 /* CollectionViewController.swift */,
+				95C33EFA25D7F23700A4AC72 /* CollectionViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -106,8 +106,8 @@
 		95C33ECA25D7DA8400A4AC72 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				95C33EDF25D7E4B100A4AC72 /* PostCollectionViewCell.swift */,
-				95C33EE025D7E4B100A4AC72 /* PostCollectionViewCell.xib */,
+				95C33F0025D7F30700A4AC72 /* PostSCollectionViewCell.swift */,
+				95C33F0125D7F30700A4AC72 /* PostSCollectionViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C33EF525D7F0C800A4AC72 /* CollactionHViewController.xib in Resources */,
 				95C33EBA25D7CE3C00A4AC72 /* LaunchScreen.storyboard in Resources */,
-				95C33EE225D7E4B100A4AC72 /* PostCollectionViewCell.xib in Resources */,
+				95C33EFC25D7F23700A4AC72 /* CollectionViewController.xib in Resources */,
+				95C33F0325D7F30700A4AC72 /* PostSCollectionViewCell.xib in Resources */,
 				95C33EB725D7CE3C00A4AC72 /* Assets.xcassets in Resources */,
 				95C33EB225D7CE3B00A4AC72 /* Main.storyboard in Resources */,
 				95C33ED425D7DDA300A4AC72 /* ScrollViewController.xib in Resources */,
@@ -193,12 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C33EF425D7F0C800A4AC72 /* CollactionHViewController.swift in Sources */,
+				95C33F0225D7F30700A4AC72 /* PostSCollectionViewCell.swift in Sources */,
 				95C33ED325D7DDA300A4AC72 /* ScrollViewController.swift in Sources */,
 				95C33ED825D7E00400A4AC72 /* Item.swift in Sources */,
 				95C33EAB25D7CE3B00A4AC72 /* AppDelegate.swift in Sources */,
+				95C33EFB25D7F23700A4AC72 /* CollectionViewController.swift in Sources */,
 				95C33EAD25D7CE3B00A4AC72 /* SceneDelegate.swift in Sources */,
-				95C33EE125D7E4B100A4AC72 /* PostCollectionViewCell.swift in Sources */,
 				95C33EB525D7CE3B00A4AC72 /* DoIOSMore.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
